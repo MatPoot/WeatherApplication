@@ -1,0 +1,5 @@
+﻿CREATE PROCEDURE FetchCities
+AS
+Select [NAME],[LABEL] from CITIES
+
+GO;

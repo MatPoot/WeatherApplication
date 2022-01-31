@@ -1,0 +1,44 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+
+
+}
+
+
+<div class=MainBlock id="MainBlock">
+    <h3>Trip Planner</h3>
+    <div>
+        <div>
+        <p>Date: <input type="text" id="datepicker" maxlength="0"></p>
+        
+    </div>
+        <table width=100%>
+            <tr>
+                <th>City</th>
+                <th>Select</th>
+                <th>Weather</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>
+               @Html.Raw(@Model.CityHTML)
+                </td>
+                 <td>
+               @Html.Raw(@Model.ButtonHTML)
+                </td>
+                <td id="WeatherInfoText">No Weather Info Available</td>
+                 <td id="CityDesc"></td>
+            </tr>
+        </table>
+    </div>
+    
+
+
+
+
+
+
+
+</div>
