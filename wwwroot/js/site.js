@@ -10,7 +10,7 @@ $(function () {
 
 // get city name and description and fetch forecast then update page
 function GetWeatherNow(cityName,CityLabel) {
-    const key = "bf9bae6782d4c439b355ada83f0af09e";
+    const key = "mykey";
     let formDay = document.getElementById("datepicker").value.toString();
     let PickedDay = moment(formDay, "MM-DD-YYYY");
     var CurrentDay = moment(new Date());
